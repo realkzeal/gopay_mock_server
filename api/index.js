@@ -92,3 +92,4 @@ server.post('/mobile_app/register', (req, res) => {
 });
 
 module.exports = server;
+module.exports.handler = serverless(app);
