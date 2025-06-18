@@ -8,7 +8,7 @@
   "main": "api/index.js",
   "scripts": {  
     "start": "vercel dev",
-    "build": "vercel build",
+    "build": "echo 'No build step needed for serverless functions'",
     "dev": "vercel dev",
     "deploy": "vercel deploy --prod",
     "test": "echo \"Error: no test specified\" && exit 1"
