@@ -1,5 +1,5 @@
 // api/index.js - Complete Mock Server for Vercel
-const { parse } = require('url');
+import { parse } from 'url';
 
 // Mock Database - In production, replace with real database
 let mockDB = {

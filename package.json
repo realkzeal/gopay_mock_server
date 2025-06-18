@@ -1,16 +1,13 @@
 {
   "name": "mock_server",
   "version": "1.0.0",
-  "description": "Mock server for testing application",
+  "description": "Mock server for testing applications",
   "license": "ISC",
   "author": "Phillip Biobaku",
   "type": "module",
-  "main": "api/index.js",
+  "main": "index.js",
   "scripts": {  
-    "start": "vercel dev",
-    "build": "echo 'No build step needed for serverless functions'",
-    "dev": "vercel dev",
-    "deploy": "vercel deploy --prod",
+    "build": "echo \"No build step needed for serverless functions\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
