@@ -1,4 +1,5 @@
 import jsonServer from 'json-server';
+
 const server = jsonServer.create();
 const router = jsonServer.router('db.json');
 const middlewares = jsonServer.defaults();
@@ -89,6 +90,21 @@ server.post('/mobile_app/register', (req, res) => {
       email: newUser.email
     }
   });
+});
+
+const port = process.env.PORT || 3000;
+server.listen(port, () => {
+  console.log(`JSON Server is running on port ${port}`);
+  console.log('Custom endpoints:');
+  console.log('  POST /partners/login');
+  console.log('  POST /partners/register');
+  console.log('  GET  /partners/profile/:id');
+  console.log('  PUT  /partners/profile/:id');
+  console.log('  GET  /partners/dashboard/:id');
+  console.log('Standard JSON Server endpoints:');
+  console.log('  GET  /api/partners');
+  console.log('  GET  /api/orders');
+  console.log('  GET  /api/products');
 });
 
 module.exports = server;
