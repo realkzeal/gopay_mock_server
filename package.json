@@ -6,9 +6,11 @@
   "author": "Phillip Biobaku",
   "type": "module",
   "main": "api/index.js",
-  "scripts": {
-    "start": "json-server --watch db.json",
-    "dev": "json-server --watch db.json",
+  "scripts": {  
+    "start": "vercel dev",
+    "build": "vercel build",
+    "dev": "vercel dev",
+    "deploy": "vercel deploy --prod",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
